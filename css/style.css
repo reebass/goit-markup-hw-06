@@ -180,7 +180,7 @@ p {
   transform: translate(-50%, -50%) scale(0.2);
 }
 
-.modal-btn {
+.modal-close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -197,6 +197,123 @@ p {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--text-white-cl);
   cursor: pointer;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  color: var(--text-accent-cl);
+}
+
+.modal-btn-close-icon {
+  fill: currentColor;
+}
+
+.modal-form {
+  margin: 40px;
+}
+
+.form-title {
+  display: block;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-main-cl);
+
+  margin-bottom: 12px;
+}
+
+.form-group-warp {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  position: relative;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: var(--text-second-cl);
+  cursor: pointer;
+}
+
+.form-group:focus-within {
+  fill: var(--text-accent-cl);
+}
+
+.form-imput {
+  display: block;
+  height: 40px;
+  width: 100%;
+  padding: 11px 41px;
+
+  border: 1px solid hsla(0, 0%, 13%, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-textarea {
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+}
+
+.form-textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-imput-icon {
+  position: absolute;
+  left: 12px;
+  bottom: 11px;
+}
+
+.form-checkbox {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-checkbox-label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  color: var(--text-second-cl);
+}
+
+.form-checkbox-link {
+  display: inline-block;
+  color: var(--text-accent-cl);
+  position: relative;
+}
+
+.form-checkbox-link::after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: var(--text-accent-cl);
+  position: absolute;
+  bottom: 5px;
+}
+
+.modal-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* header */
@@ -580,7 +697,8 @@ p {
   align-items: baseline;
 }
 
-.social-footer-title {
+.social-footer-title,
+.footer-form-title {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -592,11 +710,54 @@ p {
 
 .social-footer {
   margin-left: 70px;
+  margin-right: 93px;
 }
 
 .footer-social-link {
   background-color: var(--footer-socials-bg);
   color: var(--text-white-cl);
+}
+
+.footer-form-title {
+  display: block;
+}
+
+.footer-form-label {
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-form-imput {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.footer-form-imput::placeholder {
+  color: var(--footer-mail-phone-cl);
+}
+
+.btn-footer-form {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-footer-form::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/icons/telegram-footer.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* PAGE PORTFOLIO */
