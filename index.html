@@ -596,6 +596,9 @@
             />
             <button class="btn btn-footer-form" type="submit">
               Подписаться
+              <svg class="btn-footer-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#telegram-footer"></use>
+              </svg>
             </button>
           </label>
         </form>
@@ -648,19 +651,27 @@
               ></textarea>
             </label>
           </div>
-          <div class="form-checkbox">
+          <label class="form-agreement">
             <input
-              class="form-checkbox-imput"
+              class="agreement-input visually-hidden"
               type="checkbox"
               name="agreement"
-              value="agreement"
-              id="agreement"
             />
-            <label class="form-checkbox-label" for="agreement">
+            <svg class="agreement-icon" width="16" height="15">
+              <use
+                class="agreement-icon-checkbox"
+                href="./images/icons.svg#checkbox"
+              ></use>
+              <use
+                class="agreement-icon-checkbox-active"
+                href="./images/icons.svg#checkbox-active"
+              ></use>
+            </svg>
+            <span class="form-agreement-text">
               Соглашаюсь с рассылкой и принимаю
-              <a class="form-checkbox-link link" href="">Условия договора</a>
-            </label>
-          </div>
+              <a class="form-agreement-link link" href="">Условия договора</a>
+            </span>
+          </label>
           <button class="btn modal-btn" type="submit">Отправить</button>
         </form>
       </div>
